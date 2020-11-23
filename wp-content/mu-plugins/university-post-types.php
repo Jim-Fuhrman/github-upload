@@ -104,6 +104,21 @@ register_post_type('like', array(
     'menu_icon' => 'dashicons-heart'
   ));
 
+//"Home slide show" Post Type
+register_post_type('homepage-slideshow', array(
+    'supports' => array('title', 'subtitle', 'custom-fields'),
+    'public' => false,
+    'show_ui' => true, //show in the admin Dashboard UI
+    'labels' => array(
+      'name' => 'Homepage-slides',
+      'add_new_item' => 'Add New Homepage-slides',
+      'edit_item' => 'Edit Homepage-slide',
+      'all_items' => 'All Homepage-slides',
+      'singular_name' => 'Homepage-slide'
+    ),
+    'menu_icon' => 'dashicons-admin-multisite'
+  ));
+
 
 }
 
