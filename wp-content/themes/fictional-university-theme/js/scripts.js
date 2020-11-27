@@ -1,4 +1,8 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 import "../css/style.css"
+
 
 // Our modules / classes
 import MobileMenu from "./modules/MobileMenu"
@@ -7,6 +11,17 @@ import GoogleMap from "./modules/GoogleMap"
 import Search from "./modules/Search"
 import MyNotes from "./modules/MyNotes"
 import Like from "./modules/Like"
+
+//our React Code
+function OurFirstComponent() {
+  return (
+    <div>
+      <h1>Hello world</h1>
+      <p>Ain't life grand? (React msg)</p>
+    </div>
+  )
+}
+ReactDOM.render(<OurFirstComponent />, document.querySelector("#app"))
 
 // Instantiate a new object using our modules / classes
 const mobileMenu = new MobileMenu()

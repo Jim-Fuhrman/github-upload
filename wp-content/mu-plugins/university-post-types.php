@@ -106,8 +106,8 @@ register_post_type('like', array(
 
 //"Home slide show" Post Type
 register_post_type('homepage-slideshow', array(
-    'supports' => array('title', 'subtitle', 'custom-fields'),
-    'public' => false,
+    'supports' => array('title', 'subtitle', 'thumbnail'),
+    'public' => true,
     'show_ui' => true, //show in the admin Dashboard UI
     'labels' => array(
       'name' => 'Homepage-slides',
